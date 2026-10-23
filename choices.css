@@ -1,0 +1,108 @@
+/* Only the /bo1zm entry points load this sheet: the GAME SETUP screen (choice-screen.js) and the bar on the map list
+   (mode.js). Both are laid out in the pixels of the game's 1920x1080 menu (--px is one of them), at the places the
+   MISSION SELECT screen (index.html, landing.js) has its title, rows and description, so the two read as one menu. */
+#flow-choices, #flow-map-bar { --px: calc(min(100vw, 100vh * 16 / 9) / 1920);
+  --condensed: "Bahnschrift Condensed", "Bahnschrift SemiCondensed", Bahnschrift, "DIN Condensed", "Avenir Next Condensed", "Roboto Condensed", "Arial Narrow", Arial, sans-serif; }
+
+/* game-text.js: a run of glyph cells from the game's font sprite; the host's font-size is the capital height. */
+.gt { display: none; flex-wrap: wrap; align-items: center; max-width: 100%; }
+.gt .gw { display: flex; flex: none; }
+.gt i { display: block; flex: none; background-repeat: no-repeat; }
+[data-gt] { position: relative; }
+.gt-real { font: 400 1.36em/1.15 var(--condensed); }
+[data-gt=list] > .gt-real, [data-gt=title] > .gt-real { text-transform: uppercase; }
+[data-gt=title] > .gt-real { font: 700 1.25em/1.15 Bahnschrift, "Arial Black", "Helvetica Neue", Arial, sans-serif; letter-spacing: .08em; }
+[data-game-text=on] .gt { display: inline-flex; }
+[data-game-text=on] .gt-real { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+[data-game-text=wait] .gt-real { visibility: hidden; }
+
+/* The key art covers the window; the menu sits on a 16:9 stage like the map list's. */
+#flow-choices { position: fixed; inset: 0; z-index: 40; overflow: hidden auto; color: #fff;
+  background: #000 center / cover no-repeat; background-image: linear-gradient(90deg, #0008, #0003 45%, #0000 70%), url(art/menu-keyart.webp); }
+#flow-choices[hidden], #flow-choices [hidden], #flow-map-bar[hidden] { display: none !important; }
+#flow-choices * { box-sizing: border-box; }
+#flow-choices :is(h1, h2, p) { margin: 0; font-weight: normal; }
+.choices-stage { position: absolute; inset: 0; margin: auto; width: min(100vw, 100vh * 16 / 9); height: min(100vh, 100vw * 9 / 16); }
+.choices-head { position: absolute; left: calc(var(--px) * 356); top: calc(var(--px) * 127); }
+#choice-title { display: flex; align-items: center; height: calc(var(--px) * 40); font-size: calc(var(--px) * 26); }
+#choice-map { display: flex; align-items: center; min-height: calc(var(--px) * 34); font-size: calc(var(--px) * 19); color: #ddd; }
+.choices-list { position: absolute; left: calc(var(--px) * 352); top: calc(var(--px) * 222); width: calc(var(--px) * 450); display: flex; flex-direction: column; }
+.choices-list h2, #choice-name-label { display: flex; align-items: center; height: calc(var(--px) * 37); padding-left: calc(var(--px) * 4); font-size: calc(var(--px) * 15); color: #d0d0d0; }
+:is(.choices-head, .choices-list h2, #choice-name-label, .choices-info, #choice-name-help, #choice-reason) .gt { filter: drop-shadow(0 0 calc(var(--px) * 3) #000) drop-shadow(0 1px 1px #000); }
+.choices-list h2 .gt, #choice-name-label .gt { opacity: .8; }
+#flow-choices :is(#mode-heading, #guns-heading, #quality-heading, #choice-next) { margin-top: calc(var(--px) * 24); }
+#flow-choices #mode-heading { margin-top: calc(var(--px) * 10); } /* the name's rule line is above it */
+#flow-choices [role=radiogroup] { display: flex; flex-direction: column; }
+/* A list row: a dark band with white capitals; the chosen one is the white band with black capitals, like the focused
+   map row. Keyboard / gamepad focus is an outline, so a focused row that is not chosen does not look chosen. */
+#flow-choices button { display: flex; align-items: center; width: 100%; height: calc(var(--px) * 40); margin: 0 0 calc(var(--px) * 2);
+  padding: 0 calc(var(--px) * 12) 0 calc(var(--px) * 44); border: 0; border-radius: 0; appearance: none; text-align: left; cursor: pointer;
+  color: #fff; background: #000000a6; font: inherit; font-size: calc(var(--px) * 27); }
+#flow-choices button b { display: flex; align-items: center; font-weight: normal; }
+#flow-choices button small { display: none; } /* described on the right (.choices-info) */
+#flow-choices [role=radio]:hover { background: #3c3c3cc0; }
+#flow-choices [role=radio][aria-checked=true] { color: #000; background: #fff; }
+#flow-choices [role=radio][aria-checked=true] .gt { filter: brightness(0); }
+#flow-choices button:focus-visible, #flow-choices input:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+#choice-name { display: block; width: 100%; height: calc(var(--px) * 40); padding: 0 calc(var(--px) * 12) 0 calc(var(--px) * 44); border: 1px solid #fff5; border-radius: 0;
+  color: #fff; background: #000000a6; font: 400 calc(var(--px) * 26) / 1 var(--condensed); }
+#choice-name-help { display: flex; margin-top: calc(var(--px) * 12); padding-left: calc(var(--px) * 4); font-size: calc(var(--px) * 15); }
+#flow-choices #choice-reason { display: flex; margin-top: calc(var(--px) * 16); padding-left: calc(var(--px) * 4); font-size: calc(var(--px) * 16); }
+#flow-choices #choice-next { background: #8e1616e6; }
+#flow-choices #choice-next:hover { background: #b81d1df2; }
+#flow-choices #choice-next:disabled { background: #00000080; cursor: default; }
+#flow-choices #choice-next:disabled .gt, #flow-choices #choice-next:disabled .gt-real { opacity: .4; }
+.choices-info { position: absolute; left: calc(var(--px) * 850); top: calc(var(--px) * 240); width: calc(var(--px) * 750); pointer-events: none; }
+#choice-info-title { display: flex; align-items: center; justify-content: center; height: calc(var(--px) * 92); font-size: calc(var(--px) * 26); }
+#choice-info-text { display: flex; justify-content: center; padding: 0 calc(var(--px) * 90); font-size: calc(var(--px) * 19); text-align: center; }
+.choices-info .gt { justify-content: center; }
+/* lowfps: no graphics card in use (quality.js gpuWarning): a boxed warning under the description. */
+.choices-gpu { position: absolute; left: calc(var(--px) * 940); top: calc(var(--px) * 560); width: calc(var(--px) * 570); padding: calc(var(--px) * 16) calc(var(--px) * 20);
+  border: 1px solid #e0a43a; background: #000000c0; color: #ffd38a; font: 400 calc(var(--px) * 21) / 1.3 var(--condensed); text-shadow: 0 1px 1px #000; }
+
+/* Windows smaller than 1200x675: the same menu as one column in its own sizes (shrunk a little when the window is
+   short), the description beside it. */
+@media (max-width: 1199px), (max-height: 674px) {
+  /* lowfps: / 740 (was / 640) so the extra GRAPHICS rows still fit a 1366x768 laptop's window */
+  #flow-choices { --px: clamp(.72px, 100vh / 740, 1px); display: flex; background-image: linear-gradient(#0007, #000a), url(art/menu-keyart.webp); }
+  .choices-stage { position: static; display: grid; grid-template: "head ." auto "list info" auto / calc(var(--px) * 450) minmax(0, 1fr); column-gap: calc(var(--px) * 30);
+    width: 88vw; height: auto; margin: auto; padding: calc(var(--px) * 16) 0; }
+  .choices-head, .choices-list, .choices-info { position: static; width: auto; }
+  .choices-head { grid-area: head; margin-bottom: calc(var(--px) * 4); }
+  .choices-list { grid-area: list; }
+  .choices-info { grid-area: info; padding-top: calc(var(--px) * 37); }
+  .choices-gpu { position: static; grid-area: info; align-self: end; width: auto; }
+  #choice-info-title { height: calc(var(--px) * 40); }
+  #choice-info-text { margin-top: calc(var(--px) * 8); padding: 0; }
+}
+/* Phones: no room beside the column, so every row carries its description. */
+@media (max-width: 859px) {
+  .choices-stage { display: block; width: min(100% - 32px, 450px); padding: 12px 0; }
+  #flow-choices :is(#mode-heading, #guns-heading, #quality-heading, #choice-next) { margin-top: 12px; }
+  #flow-choices #mode-heading { margin-top: 6px; }
+  .choices-info { display: none; }
+  .choices-gpu { margin-top: 12px; font-size: 15px; }
+  #flow-choices [role=radio] { flex-direction: column; align-items: flex-start; justify-content: center; gap: 5px; height: auto; min-height: 58px; padding: 9px 12px 9px 16px; font-size: 22px; }
+  #flow-choices button small { display: flex; font-size: 14px; }
+  #flow-choices [role=radio]:not([aria-checked=true]) small { opacity: .85; }
+  #flow-choices #choice-next { height: 48px; padding-left: 16px; }
+  #choice-name { height: 44px; padding-left: 16px; }
+}
+
+/* The map list's bar: Back as a list row, the choices made and the focused map's note, on one line in the footer between
+   the MISSION SELECT panel and the copyright line (it wraps on phones, where the stage is a strip). */
+#flow-map-bar { --bpx: max(var(--px), .62px); position: fixed; z-index: 5; display: flex; align-items: center; gap: calc(var(--bpx) * 24); color: #fff;
+  left: calc(50vw + var(--px) * (352 - 960)); top: calc(50vh + var(--px) * (977 - 540)); max-width: calc(100vw - 16px); }
+#flow-map-bar button { display: flex; flex: none; align-items: center; height: calc(var(--bpx) * 40); margin: 0; padding: 0 calc(var(--bpx) * 44); border: 0; border-radius: 0; appearance: none;
+  cursor: pointer; color: #fff; background: #000000a6; font: inherit; font-size: calc(var(--bpx) * 27); }
+#flow-map-bar button:is(:hover, :focus-visible) { color: #000; background: #fff; outline: none; }
+#flow-map-bar button:is(:hover, :focus-visible) .gt { filter: brightness(0); }
+#flow-map-bar div { display: flex; flex-wrap: wrap; align-items: center; column-gap: calc(var(--bpx) * 26); min-width: 0; }
+#flow-summary { display: flex; font-size: calc(var(--bpx) * 19); }
+#flow-map-reason { display: flex; font-size: calc(var(--bpx) * 15); }
+#flow-map-bar div .gt { filter: drop-shadow(0 0 calc(var(--bpx) * 3) #000) drop-shadow(0 1px 1px #000); }
+/* The captured footer has a baked-in Back box over the build text: on /bo1zm the footer is drawn again without them
+   (art/mapselect-footer.webp, mkmenu.py). */
+.stage::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 10%; pointer-events: none; background: url(art/mapselect-footer.webp) 0 0 / 100% 100% no-repeat; }
+.stage a[aria-disabled=true] { cursor: not-allowed; background: #000a; }
+@media (max-width: 700px) { #flow-map-bar { left: 8px; right: 8px; gap: 12px; } }

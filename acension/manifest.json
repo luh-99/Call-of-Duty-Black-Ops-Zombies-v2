@@ -1,0 +1,975 @@
+{
+ "schema": 1,
+ "map": "zombie_cosmodrome",
+ "version": "60f58198dc5a09c0785ee81fe402a735aba18da86ba6543ee012d0daa9939bef",
+ "classes": [
+  "boot",
+  "background",
+  "lazy"
+ ],
+ "total_bytes": 1001228918,
+ "class_bytes": {
+  "boot": 978728805,
+  "background": 0,
+  "lazy": 22500113
+ },
+ "files": [
+  {
+   "path": "localization.txt",
+   "size": 2470,
+   "sha256": "a102dfb5515f8fb1707a0ead72e492385da113bc128b414747e17a580a19efc8",
+   "kind": "loose",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_00.iwd",
+   "size": 10920259,
+   "sha256": "b32bfd1562828385bd932c62f388de81eb97110899c444f3d08fb9ad9afbd91b",
+   "kind": "iw_00",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_01.iwd",
+   "size": 18139318,
+   "sha256": "bdaed5aec768b0b90bbf334681c2a76b11dea9256b2cbbb418ad7881fd9124eb",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_02.iwd",
+   "size": 1948878,
+   "sha256": "43231a1f69870502ac77f6ebf838c86cdfbb6a7de74ea18fc3c7585a711466a2",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_03.iwd",
+   "size": 1466522,
+   "sha256": "93c594a0be6e926bc3681715a9af3d586a899e885cb996106494493ea2da622f",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_04.iwd",
+   "size": 44605476,
+   "sha256": "1adc3faeca3bf5667b5a0c84705c9e53cb5773a885c00086909fbcf63f5b4503",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_05.iwd",
+   "size": 17999244,
+   "sha256": "aac537c060d617a2e26ee14644c0eca9307d561cf295a04554acad18372cdaa3",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_06.iwd",
+   "size": 16917847,
+   "sha256": "3700c1c8d296a51d284cda27a5808ff15b236d4d45718256a64f9e443b65fbdc",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_07.iwd",
+   "size": 9076061,
+   "sha256": "3775110384e4c3f995d5b08282f60497647a21b8e7696fce45e892863298a21a",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_08.iwd",
+   "size": 3510302,
+   "sha256": "e0f83a302de0e4b367bc320dddc1cd7613062afd3b62b9a125bd2508ff4ab7cb",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_09.iwd",
+   "size": 7601548,
+   "sha256": "1c4bf077c420a8e91935fdc82c65b443c7e791ed1fd68159e8a7573dad220815",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_10.iwd",
+   "size": 9500712,
+   "sha256": "190611f16c1c303a7b12d142f281b01da8757cdb6ce3beabc8a55b8aca951449",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_11.iwd",
+   "size": 13738802,
+   "sha256": "cafb6179c46b2781839a6f3c3e26108a910aa4a56d347f3406f87cf03189a256",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_12.iwd",
+   "size": 12191154,
+   "sha256": "aa6d49164ccd6286e48d746a77a058571897cc34b09b11c74aaf7c6aa4995bb4",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_13.iwd",
+   "size": 7070224,
+   "sha256": "a1f361b80b89de5acd872f93b4529c982f0a7f84e0ffa37d38833bc822e09660",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_14.iwd",
+   "size": 10138754,
+   "sha256": "d958542f784992a561dc61a92bc9ed71011841e306a67ab9374f3a7d475ad174",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_15.iwd",
+   "size": 1954130,
+   "sha256": "43441c88c0c3796a9359031049767f73f9fcf90519aa9ce53476491875998b8c",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_16.iwd",
+   "size": 9842856,
+   "sha256": "84dd6d10e15d214c9bcda4368ae890e5716ac86fa7919686d6722e0a1b5d1d48",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_17.iwd",
+   "size": 12125356,
+   "sha256": "5c30296886a39bb87138cb15dba37c65c53914db2e639163e00e7422c8707039",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_19.iwd",
+   "size": 10731898,
+   "sha256": "841c3abb7d905749e9f5e2a40f8e5439f50ec898379659276fe8916fcc7ca71f",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_22.iwd",
+   "size": 16895258,
+   "sha256": "7447c3302fcd29d878cb1a704ae04d4c932ae9b8997a5dffa8647aa6b782b5f5",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_23.iwd",
+   "size": 10870794,
+   "sha256": "5def42bd3d77d3e889ff10fb760c2f7641783d37db92e6e52c63143e0d7a1c07",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_24.iwd",
+   "size": 599818,
+   "sha256": "733b00f42340a4a36418675c9fb029c1b158f0ee5b10187928dcc4291f6a518c",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_25.iwd",
+   "size": 21479932,
+   "sha256": "58c8219eefe5fe27389ec194e15f915cdd9a9be627b24a1b4edc07e74e25927c",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_26.iwd",
+   "size": 12928118,
+   "sha256": "0ca222afbcd3f4101e986dca065a7aacbdbed487b4055204f635cb027886884e",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_27.iwd",
+   "size": 1576680,
+   "sha256": "a2d8fc16f99cf61cacd9953062c7cdb5a89f97de7a143ca57acd8f33537468aa",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_28.iwd",
+   "size": 31343974,
+   "sha256": "6d2a424754854e6a62e34e86065708a786b0f68a6cb44f08104c98515c40b699",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_29.iwd",
+   "size": 581304,
+   "sha256": "a6ecf2fac50f11538d12dc588761b3093bff306cc5886f99b9aa08c95512485e",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_30.iwd",
+   "size": 1030704,
+   "sha256": "6835c8a7a89f1b07ef14656f4ae285b24f9c41c488c9ac669ac22a2cc37cda32",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_32.iwd",
+   "size": 974300,
+   "sha256": "827faa3f503a70289bdee04bc22b6a95cc2af7ac40bb7f9e976070116b0e99d2",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_33.iwd",
+   "size": 394762,
+   "sha256": "12aba914e4588d9b9faf1d1543d7be52c887402a92b45964bf0eaf08e7d597b7",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_34.iwd",
+   "size": 87820,
+   "sha256": "1ce129a816b4584d5ee48dad34ac1434c41a5a0e40d88b2a853b7c37faee17e2",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_36.iwd",
+   "size": 7586047,
+   "sha256": "92be36f8064c0ca91238ef90b30a00f532dbe1fe4c5b3893462855124795568f",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_37.iwd",
+   "size": 4166282,
+   "sha256": "466d623c3d327252511e618ac6d5718e385bc75eb6bfbc994554eefb868bc904",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_38.iwd",
+   "size": 109678,
+   "sha256": "d60553663ef05a942fe242dc82e4bc6ed1b3eee24b3c82153ccb335cbabfe99f",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_frontend.iwd",
+   "size": 1337,
+   "sha256": "c253a6bdb2097e83fc48645e79adfe90ab91e740ae21d394304ab73092a92c3d",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/localized_English_iw00.iwd",
+   "size": 652592,
+   "sha256": "1973bf3898ac5ae287246be1e70e959ee9cf4d00b84005955b006237212b6219",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/localized_English_iw01.iwd",
+   "size": 9922348,
+   "sha256": "92bdb3309c1e7ddd59105ca9607ee360d4d9e6a83c268c22482dd87ffd28d16f",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/localized_English_iw04.iwd",
+   "size": 1367566,
+   "sha256": "8643f70558918e40e7eff1f273bd3defeb3203ca52512cbac21ba4eb00e6d7b4",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/localized_English_iw06.iwd",
+   "size": 98976220,
+   "sha256": "4dc8129e870bf46cd85d3b59bcc956dc0d182e831300de541067efa3a5194a30",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/localized_English_iw07.iwd",
+   "size": 68266,
+   "sha256": "c5b0632546035c23ebde1123c025e7fa8d8d076f7042e54f3f3ddeb0c076ee38",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/localized_English_iw09.iwd",
+   "size": 1788780,
+   "sha256": "c4f20ca33ed9ccc135e6000229bba5eed80d114135b83287dd63a9990ac6ec69",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/playlists_sp.info",
+   "size": 1142,
+   "sha256": "2d9ee37635ff46d791f90ca7a75324458630e7dbbe7e48b7299a79a2e8cdbd8c",
+   "kind": "loose",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/clientscripts/mod_zones/zombie_coast.csc",
+   "size": 3730,
+   "sha256": "0bd0aab24e6e3a2a5dc67b38e2b42085eac69c50ffe5ef499835440796675609",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/clientscripts/mod_zones/zombie_temple.csc",
+   "size": 1502,
+   "sha256": "6a457137ed380612f25519cebb0236a7a31cb3917e87d5753d984c85bed5823f",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_modenemies/_astro.gsc",
+   "size": 7456,
+   "sha256": "43e9db39e77b53d653c360c662af4f2e49a7fda103140b039635e4b3e5350c9e",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_modenemies/_director.gsc",
+   "size": 14361,
+   "sha256": "1f7fee88f40621e3428b3330bfbd2185735e810783bfc257c2b87d551e9e34f1",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_modenemies/_dogs.gsc",
+   "size": 2835,
+   "sha256": "a67dfad99c36a61577cfc57cf1938d073314cee653ccf649378fab53a8dd5c82",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_modenemies/_monkey.gsc",
+   "size": 12486,
+   "sha256": "fe8aa8b8dd32cd8c700530e119a64fc6028db1f473d883857664a424aa8be381",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_modenemies/_monkey_spots.gsc",
+   "size": 5230,
+   "sha256": "83e988e2a0f23e4449daa358eea0d5a2aba6f277031ba2a3fa18ee3051aba050",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_modenemies/_napalm.gsc",
+   "size": 8691,
+   "sha256": "03496f9b33e54c05daed09555bca876725be6458cee4c39867074b6ce9858b3a",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_modenemies/_sonic.gsc",
+   "size": 8662,
+   "sha256": "d1bacd23ff3e76e527555313a7a0d4da3e77a6db2fef8aae6b11ff5eae5b2c7e",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_modenemies/_thief.gsc",
+   "size": 13987,
+   "sha256": "b760f8495610714631b26ac44f5fa9e8ac58cfd75da8497be16cb9d511498b89",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_modenemy.gsc",
+   "size": 8228,
+   "sha256": "ac343e98e7c6c4d178d24af4f267f7ef4884e8d839d00ac9a0b5c0fa3ff75ade",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_modstack.gsc",
+   "size": 1895,
+   "sha256": "a2f92a03f06dac860a42c80b889431aa2cfdca4b553229f96abda070e535683d",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/_zombiemode_ffotd.gsc",
+   "size": 3683,
+   "sha256": "c61beab38481ccb41ded3470394054d8f38d919652619b278dfedc216cbd01e9",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/mod_zones/zombie_coast.gsc",
+   "size": 430,
+   "sha256": "5ca62ab2d0978aa8860458298236d68939f7bf8a4150c53b3b8cefdc569352be",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/mod_zones/zombie_cosmodrome.gsc",
+   "size": 724,
+   "sha256": "ea9177d0fa04dfe79e171ced5580da3a4872dd723271227b8897204c8f0cea0e",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/mod_zones/zombie_moon.gsc",
+   "size": 427,
+   "sha256": "75decce4e3001fe690eedc9b72699df5d56b3307ab2f59fc7af9ffde9bf0b0ee",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/mod_zones/zombie_pentagon.gsc",
+   "size": 439,
+   "sha256": "649f6fc80adca101e2863ebef04794662a820e98ae60c57ee490f3b614a3f7f4",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/mod_zones/zombie_temple.gsc",
+   "size": 889,
+   "sha256": "8662d1246b644aaf09c77d12ca53e61cf55e5c90a559ce846e55ae30e0373173",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/zombie_pentagon.zombie_coast.ents",
+   "size": 238,
+   "sha256": "48054583996a539c75136e330f8e5979aea20d0b6fe61c34aecd83cac5e7d0c7",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/zombie_pentagon.zombie_moon.ents",
+   "size": 200,
+   "sha256": "021daf0c23f6f1cfe6e320ae9230656017b99bb261b83c62bdb44b524910b5e3",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/zombie_pentagon.zombie_temple.ents",
+   "size": 461,
+   "sha256": "c9b68f2b235f171e3ce0757d03bacf4864123dcd563210e846800a710d892713",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/zombie_pentagon_ffotd.gsc",
+   "size": 596,
+   "sha256": "ebc17a45ea7875142e437b5ebdcabca217006bde5e955c3dffe62e3ba2882713",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/zombie_theater.zombie_coast.ents",
+   "size": 231,
+   "sha256": "4150eafaf74a25cabddd6c6485133544e4c27b80d79ff14215bbdfbf35e5e53d",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/zombie_theater.zombie_cosmodrome.ents",
+   "size": 193,
+   "sha256": "2f66db62e14e8370324691d895cc164dc6d4d28b738e89bacf054fda180be552",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/zombie_theater.zombie_moon.ents",
+   "size": 200,
+   "sha256": "140c478bb823241be5d0c541c16006e24f1caea9a33542aa6efa37959da7cb6b",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/zombie_theater.zombie_pentagon.ents",
+   "size": 194,
+   "sha256": "e34dbffde442f174268ce14e0f4ad1c83ed993c543d46f09d58d2332a345cb2c",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/_stack/maps/zombie_theater.zombie_temple.ents",
+   "size": 461,
+   "sha256": "78b8b4fe7e01e7f72ec0f1a040b530c2a3bb69bd4932d18b9b5e49557eaa616f",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/clientscripts/_zombiemode_ffotd.csc",
+   "size": 10410,
+   "sha256": "a1724d207981b3d13ca1501e64094640f7160d4a470ec3628eb6e2b6790d3d10",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/cs2_hud_font.iwd",
+   "size": 16790216,
+   "sha256": "2e67584cf429e62157725b16adb86103590deca760552abab8dcb89d9b978471",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot",
+   "hudFontFiles": 2
+  },
+  {
+   "path": "mods/cstest/cs2_images.iwd",
+   "size": 24520818,
+   "sha256": "03fafdef8bc8da2bd11f43b7d24a4ab1980a4cd9ed370ed8095d932bda7faf1d",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot",
+   "images": 261,
+   "mipDrop": 2
+  },
+  {
+   "path": "mods/cstest/cs2_skins.iwd",
+   "size": 21605568,
+   "sha256": "2fd3e990bf38fce9a66ca3e52216307fd480394cd1134e3c5f9d03e790b92d77",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot",
+   "skinImages": 211,
+   "mipDrop": 2,
+   "skins": [
+    "ak47 142 B the Monster",
+    "ak47 113 The Outsiders",
+    "aug 173 Lil' Pig",
+    "aug 134 Eye of Zapems",
+    "awp 1206 Printstream",
+    "awp 163 CMYK",
+    "bizon 1418 RMX",
+    "bizon 1472 Traitor",
+    "cz75a 937 Slalom",
+    "cz75a 1443 Hydraulics",
+    "deagle 938 Starcade",
+    "deagle 114 Calligraffiti",
+    "elite 112 Hydro Strike",
+    "elite 139 Sweet Little Angels",
+    "famas 1184 Bad Trip",
+    "famas 1202 2A2F",
+    "fiveseven 1168 Hybrid",
+    "fiveseven 1429 Dark Polymer",
+    "galilar 939 NV",
+    "galilar 1185 Control",
+    "glock 129 Gold Toof",
+    "glock 1167 Block-18",
+    "hkp2000 1181 Sure Grip",
+    "hkp2000 1342 Red Wing",
+    "m249 120 Hypnosis",
+    "m249 1435 Bock Blocks",
+    "m4a1 1209 Hellish",
+    "m4a1 1210 Choppa",
+    "m4a1_silencer 106 Vaporwave",
+    "m4a1_silencer 1166 Black Lotus",
+    "mac10 126 Saiba Oni",
+    "mac10 1164 Light Box",
+    "mag7 1188 Resupply",
+    "mag7 1355 MAGnitude",
+    "mp5sd 1180 Statics",
+    "mp5sd 1344 Focus",
+    "mp7 1163 Just Smile",
+    "mp7 940 Astrolabe",
+    "mp9 1211 Latte Rush",
+    "mp9 1341 Broken Record",
+    "negev 144 Wall Bang",
+    "nova 145 Wurst Holle",
+    "nova 1192 Rising Sun",
+    "p250 130 Epicenter",
+    "p250 1420 Kintsugi",
+    "p90 127 Randy Rush",
+    "p90 936 Attack Vector",
+    "revolver 123 Tango",
+    "sawedoff 1160 Analog Input",
+    "sawedoff 1427 Fusion",
+    "scar20 117 Trail Blazer",
+    "scar20 883 Wild Berry",
+    "ssg08 128 Rapid Transit",
+    "ssg08 1161 Dezastre",
+    "tec9 1159 Slag",
+    "tec9 1447 Perimeter",
+    "ump45 131 Neo-Noir",
+    "ump45 1194 K.O. Factory",
+    "usp_silencer 1173 Jawbreaker",
+    "usp_silencer 1186 PC-GRN",
+    "xm1014 146 Monster Melt",
+    "xm1014 1174 Irezumi"
+   ]
+  },
+  {
+   "path": "mods/cstest/cs2_sounds.iwd",
+   "size": 70533209,
+   "sha256": "1f5de385852b4a422b31bed0918a5bbe88dd9c6f4129142649d92b404bf8c1f9",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot",
+   "sounds": 808
+  },
+  {
+   "path": "mods/cstest/cskino.cfg",
+   "size": 1327,
+   "sha256": "093f224187ac2842dec232c07f3cfded21b3442d416f3617d7dff71622580e9b",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/cstest.cfg",
+   "size": 1911,
+   "sha256": "47879ae2e91c233b53b92c6d151456611e4a2f4324b7391c40becb9b36f5bd69",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/maps/_zombiemode_ffotd.gsc",
+   "size": 4669,
+   "sha256": "be4641af48fd9b8c3804aa2caa92d52ed9feaae1532741b0d29c62ccaf8fae47",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/maps/cstest/_cskino.gsc",
+   "size": 119627,
+   "sha256": "87dd23062476d2bd33d11ded5e1f0279e5d70974543944eaa6a75110f5968406",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/maps/cstest/_cstest.gsc",
+   "size": 19335,
+   "sha256": "3dbab20c97b854ccd8de17cf520f447e75ae6cfc791753ca4c49eb7a0641b1fa",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/maps/cstest/_cszmtrace.gsc",
+   "size": 11561,
+   "sha256": "250c651fa56d23595e09bce795e22d0c3dfc959af191bf649bf86cd689e6a4e7",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/maps/cstest/_hooks.gsc",
+   "size": 387,
+   "sha256": "65460c07a1e988cf466da92d38b9291195a003b61f4a1a177ae990b29723a74c",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/maps/cstest/_knife_bo_check.gsc",
+   "size": 7349,
+   "sha256": "6961a29ae39b9278305e6da579871eb240596aaf710802c14f33861c8a0f8970",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/maps/zombie_pentagon_ffotd.gsc",
+   "size": 836,
+   "sha256": "08fd925e80aed54d3d11b8230cae6e1984d476e5165f5ddd0c37129fc0d793b7",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "mods/cstest/mod.ff",
+   "size": 52676736,
+   "sha256": "b411aa2760da6d6f0317842d64b77dcf0b1fbcb14041726f88d2e36ec66e1493",
+   "kind": "mod",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "web/shaders/shaders-wgsl.pack",
+   "size": 53129715,
+   "sha256": "afeaf3dc0cff36a9c7f6c9e006e5f8062db2c41d1e8be11b82f4d61415653c0b",
+   "kind": "shader",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "web/sound/sounds.pack",
+   "size": 67584764,
+   "sha256": "a439a754b79947f6baa326b1961de327f8d5f0ebe917654eb2c445b65042dce5",
+   "kind": "loaded-sound",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/code_post_gfx.ff",
+   "size": 6222445,
+   "sha256": "a59e9b5bdb3da4e2951cd308f1994e372e40a801c22afd66d2e199b58bdf80b3",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/code_post_gfx_mp.ff",
+   "size": 3840169,
+   "sha256": "d920e55b34229bcaa02f12aee7ec74c35e36fe77d6174830a41b6ddc5a2709ba",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/code_pre_gfx_mp.ff",
+   "size": 150120,
+   "sha256": "0c29196aa8d6bacdef3657f6d726edc7eb82c574208ca673ebc3d4338461b4c4",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/common_zombie.ff",
+   "size": 79661361,
+   "sha256": "137dee5244785758a7ea8fd6af05b51a5dcdf51ea6e953188eee5023106a0966",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/common_zombie_patch.ff",
+   "size": 1119357,
+   "sha256": "7d8b3fbde546256a8711d9b79cd07cf5ba6f15ce61ad565edd0b8a7553f24724",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/patch.ff",
+   "size": 4204010,
+   "sha256": "916b00a9fb61b06d798019ace547ead24ef4f8ced9f725fb7a195083f319d1f1",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/patch_mp.ff",
+   "size": 10949515,
+   "sha256": "399b9c0b098573bb4af9a23ac148204c8e0dbb9feed41b80d28f3602c852df6b",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/zombie_cosmodrome.ff",
+   "size": 119991334,
+   "sha256": "eb7ea735cbdd97b08a9e06ce5c54d4abbaaaa417bb2473172e118ff82f256381",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    1679703,
+    2223066,
+    2189563,
+    1611358,
+    397198,
+    663628,
+    2891338,
+    1513570,
+    1851489,
+    3685285,
+    3857325,
+    2159538,
+    3350149,
+    5491848,
+    1223988
+   ],
+   "local_parts": true
+  },
+  {
+   "path": "zone/Common/zombie_cosmodrome_patch.ff",
+   "size": 1136743,
+   "sha256": "04f80c1a7c8a932eb07681d02d42f47d9733ba435e954fe95cfc4ec58c605699",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_code_post_gfx.ff",
+   "size": 433667,
+   "sha256": "ce02f93cf3b46dbd2eb27e3e6b1fb6ee3a3c0ef0b9a1e9b0e2dbb7e362bfd571",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_code_post_gfx_mp.ff",
+   "size": 523382,
+   "sha256": "255409654a455407cb2a5f1c9945630547a8d90b06e4189ed7557a90cbd22b72",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_code_pre_gfx_mp.ff",
+   "size": 5499,
+   "sha256": "43457a6c810b89ea077c8e272cf9a657d55e5212d09bd563a0acbbdde68f2a4b",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_common_zombie.ff",
+   "size": 122944,
+   "sha256": "bf5fb5180b8180823e9a2945e5b81caf7aa1c5750686b95ae24302b53cdc79b1",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_patch.ff",
+   "size": 25572,
+   "sha256": "a5973b04f9c408ffdd127a97ef836b098c86d3ddf29db846f563361cf43ad35e",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_patch_mp.ff",
+   "size": 22747,
+   "sha256": "3b06a3396bc4596b14d0912cd3964d1da642763fa9378dbad51d58849472b94c",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_zombie_cosmodrome.ff",
+   "size": 317540,
+   "sha256": "7db3d61936ec799a166b77a1da18d8390c210ccd33958aca1ea7d5f702c1f58f",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "web/shaders/shaders.pack",
+   "size": 22500113,
+   "sha256": "6510adb5672c61bf47bcbd117f41bc7e2bde1f314c1df7a6be248423e962ad40",
+   "kind": "shader",
+   "priority": "lazy",
+   "class": "boot"
+  }
+ ],
+ "streams": [
+  {
+   "path": "web/video/zombie_cosmodrome_load.av1.webm",
+   "size": 2148843,
+   "sha256": "6f6daf0ef194f98c05b2f538b5330d9da3374984be11b3adfbee14af21d27873",
+   "kind": "video",
+   "name": "zombie_cosmodrome_load",
+   "width": 854,
+   "height": 480,
+   "frames": 1188,
+   "fps_num": 2997,
+   "fps_den": 100,
+   "mime": "video/webm; codecs=\"av01.0.04M.08, opus\"",
+   "priority": "stream",
+   "class": "stream"
+  },
+  {
+   "path": "web/video/zombie_cosmodrome_load.webm",
+   "size": 3997592,
+   "sha256": "b61550ba0ad62bea676e1357da53073b7fc75ec0fa8cf919a2bd2abecd52e364",
+   "kind": "video",
+   "name": "zombie_cosmodrome_load",
+   "width": 854,
+   "height": 480,
+   "frames": 1188,
+   "fps_num": 2997,
+   "fps_den": 100,
+   "mime": "video/webm; codecs=\"vp9, opus\"",
+   "priority": "stream",
+   "class": "stream"
+  }
+ ],
+ "variant": "original+size3",
+ "transport": {
+  "encoding": "br",
+  "chunk": 8388608
+ }
+}
